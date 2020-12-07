@@ -1,0 +1,187 @@
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Автосервис | V8</title>
+       <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+       <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{% static 'css/index_design.css' %}">
+    </head>
+    <body>
+        <header>
+            <div class="logo_part">
+                <a alt="V8 логотип">
+                    <img class="header_logo" src="../static/css/v8_1.png">
+                </a>
+            </div>
+            <div class="text_v8">
+                  <a href="#" class="logo">V8 <br> Motors</a>
+            </div>
+            <ul>
+                <li><a href="#section1">Главная</a></li>
+                <li><a href="#section2">Услуги</a></li>
+                <li><a href="#" onclick="topFunction()">Галерея</a></li>
+            </ul>
+
+            <div class="btn-contain">
+              <div class="btn-center-contain">
+                <a class="btn-center" onclick="myFunction1()" style="width: auto;">Записаться</a>
+              </div>
+            </div>
+
+
+            <div class="tel_num">
+                  <a href="tel:+77769679006">+7-776-967-90-06</a>
+            </div>
+            <div class="email_part">
+                  <a href="mailto: v8_serviceast@mail.ru">v8_serviceast@mail.ru</a>
+            </div>
+
+        </header>
+
+        <section class="banner1" id="section1">
+             <div class="engine_img">
+                  <img src="../static/css/engine.png " alt="name" width="500" height="550" />
+             </div>
+             <div class="main_text">
+                  <h1>Ремонт двигателей <br> отечественного и иностранного производства Капитальный ремонт <br>деталей двигателя <a href="#">подробнеe</a></h1>
+             </div>
+             <div class="hour_text">
+                        <p>г. Нур-Султан</p>
+                        <p>ул. Жумекен Нажимеденова 20</p>
+             </div>
+             <div class="hour_text_d">
+                        <p>|</p>
+             </div>
+             <div class="hour_text_t">
+                        <p>Пн - Сб </p>
+                        <p>10:00 - 18:00</p>
+             </div>
+        </section>
+
+
+        <section class="banner2" id="section2">
+             <div class="t_engine_img">
+                  <img src="../static/css/engine-transparent.png " alt="name" width="850" height="650"/>
+             </div>
+            <div class="banner2_text1">
+                  <p>Производим Капитальный Ремонт</p>
+            </div>
+            <div class="banner_text2">
+                  <p>всех двигателей BMW как: <u>N20, N26, N53, N55, N55HP, N63. </u> </p>
+                  <br>
+                  <p>«Swap моторов»-Чип тюнинг</u> </p>
+                  <br>
+                  <p>Производим ремонт отдельных деталей любых двигателей внутреннего сгорания:</p>
+            </div>
+            <div class="banner_text3">
+                  <p>- Головка блока цилиндров (ГБЦ) и её составляющие детали</u> </p>
+                  <p>- Блок цилиндров (БЦ) и его составляющие детали</u> </p>
+                  <p>- Коленчатый вал</u> </p>
+                  <p>- Шатуны</p>
+            </div>
+            <div class="check1">
+                  <i class="fa fa-check" style="font-size:28px;color:rgb(0, 255, 10)"></i>
+                  <h6>Профессиональное оборудование</h6>
+            </div>
+            <div class="check2">
+                  <i class="fa fa-check" style="font-size:28px;color:rgb(0, 255, 10)"></i>
+                  <h6>Гарантия на выполненные работы</h6>
+            </div>
+            <div class="check3">
+                  <i class="fa fa-check" style="font-size:28px;color:rgb(0, 255, 10)"></i>
+                  <h6>Опытные мастера</h6>
+            </div>
+            <div class="check4">
+                  <i class="fa fa-check" style="font-size:28px;color:rgb(0, 255, 10)"></i>
+                  <h6>Наличие запчастей на нашем складе</h6>
+            </div>
+            <div class="check5">
+                  <i class="fa fa-check" style="font-size:28px;color:rgb(0, 255, 10)"></i>
+                  <h6>Высокоточный подбор и заказ запчастей по низким ценам</h6>
+            </div>
+            <div class="check6">
+                  <i class="fa fa-check" style="font-size:28px;color:rgb(0, 255, 10)"></i>
+                  <h6>Выполнение исключительно согласованных с клиентом работ</h6>
+            </div>
+            <div class="t1_engine_img">
+                 <img src="../static/css/engine-transparent-2.png " alt="name" width="700" height="500"/>
+            </div>
+
+      </section>s
+
+        <section class="banner3" id="section3">
+
+
+             <!-- <div class="login_button">
+                  <button onclick="myFunction()" style="width: auto;">Login</button>
+             </div> -->
+
+             <div class="modal" id="modali">
+                   <form class="modal-content animate" action="#" method="post">
+                         <div class="img">
+                               <!-- <span class="close" title="Close Button">$times;</span> -->
+                               <img src="../static/css/bmw_icon.png" alt="Avatar" class="avatar" width="100px" height="100px">
+                         </div>
+                         <div class="container">
+                               <label for="username">Имя</label>
+                               <input type="text" name="username" placeholder="Введите имя "value="" required>
+
+                               <label for="phonenumber">Телефон</label>
+                               <input type="tel" name="phonenumber" placeholder="+7 777 123 45 67" value="+7" required>
+
+                               <label for="username">VIN номер</label>
+                               <input type="text" name="username" placeholder="Ввидите VIN номер машины " required>
+
+                               <div class="container">
+                                     <button type="submit" name="button" onclick="myFunction3()">Записаться</button>
+                               </div>
+                               <div class="container" style="background-color:rgb(255, 255, 255)">
+                                     <button type="button" name="button" class="cancel" onclick="myFunction2()">Cancel</button>
+                               </div>
+                         </div>
+                   </form>
+             </div>
+
+
+        </section>
+
+
+    </body>
+</html>
+
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+</script>
+<script>
+function myFunction1() {
+  document.getElementById("modali").style.display = "block";
+}
+function myFunction2() {
+  document.getElementById("modali").style.display = "none";
+}
+function myFunction() {
+  alert("Здравствуйте. Спасибо что вы оставили заявку. Мы очень скоро свяжемся с вами ");
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<script type="text/javascript">
+$(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 900, 'linear');
+  });
+});
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
