@@ -11,8 +11,6 @@ venv/
 # Database
 db.sqlite3
 
-# Static folder
-static/
 
 # macOS
 ._*
