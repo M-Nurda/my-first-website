@@ -26,9 +26,13 @@ def post_list(request):
     return render(request, 'blog/index.html', {})
 
 def home_page(request):
-    name=request.POST["name"]
-    tel=request.POST["tel"]
-    vin=request.POST["vin"]
+    # name=request.POST.get["name",]
+    # tel=request.POST.get["tel"]
+    # vin=request.POST.get["vin"]
+
+    name = request.POST.get("name",False)
+    tel = request.POST.get("tel", False)
+    vin = request.POST.get("vin", False)
 
     client_info=Client(name=name,tel=tel,vin=vin)
     client_info.save()
